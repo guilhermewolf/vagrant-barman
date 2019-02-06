@@ -44,7 +44,6 @@ EOF
    cp /vagrant/files/id_rsa.pub /var/lib/postgresql/.ssh/authorized_keys
    sudo ssh-keyscan -H 192.168.205.11 >> ~/.ssh/known_hosts
    sudo chown -R postgres. /var/lib/postgresql/.ssh
-   sudo su -c "pgbench -i -s 5" postgres
 SCRIPT
 
 $configureNode = <<-SCRIPT
